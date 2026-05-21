@@ -19,7 +19,7 @@ function Applications() {
         try {
 
             const res = await axios.get(
-                "http://localhost:5000/applications"
+                "https://careerpilot-ai-cwrs.onrender.com/applications"
             )
 
             setApplications(res.data)
@@ -136,7 +136,7 @@ function Applications() {
                                 <div className="mt-8 flex gap-4">
 
                                     <a
-                                        href={`http://localhost:5000/${app.resume}`}
+                                        href={`https://careerpilot-ai-cwrs.onrender.com/${app.resume}`}
                                         target="_blank"
                                         rel="noreferrer"
                                         className="bg-blue-600 text-white px-6 py-3 rounded-2xl font-semibold hover:bg-blue-700 transition"

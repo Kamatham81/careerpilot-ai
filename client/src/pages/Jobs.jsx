@@ -31,7 +31,7 @@ function Jobs() {
         try {
 
             const response = await axios.get(
-                "http://localhost:5000/jobs"
+                "https://careerpilot-ai-cwrs.onrender.com/jobs"
             )
 
             setJobs(response.data)
@@ -57,7 +57,7 @@ function Jobs() {
         try {
 
             await axios.post(
-                "http://localhost:5000/save-job",
+                "https://careerpilot-ai-cwrs.onrender.com/save-job",
                 {
                     title: job.title,
                     company: job.company,
@@ -129,7 +129,7 @@ function Jobs() {
             data.append("resume", formData.resume)
 
             await axios.post(
-                "http://localhost:5000/apply",
+                "https://careerpilot-ai-cwrs.onrender.com/apply",
                 data
             )
 

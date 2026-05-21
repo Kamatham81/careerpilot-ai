@@ -24,7 +24,7 @@ function Dashboard() {
         try {
 
             const res = await axios.get(
-                "http://localhost:5000/applications"
+                "https://careerpilot-ai-cwrs.onrender.com/applications"
             )
 
             setApplications(res.data)
@@ -44,7 +44,7 @@ function Dashboard() {
         try {
 
             const res = await axios.get(
-                "http://localhost:5000/saved-jobs"
+                "https://careerpilot-ai-cwrs.onrender.com/saved-jobs"
             )
 
             setSavedJobs(res.data)
@@ -209,7 +209,7 @@ function Dashboard() {
                                             </div>
 
                                             <a
-                                                href={`http://localhost:5000/${app.resume}`}
+                                                href={`https://careerpilot-ai-cwrs.onrender.com/${app.resume}`}
                                                 target="_blank"
                                                 rel="noreferrer"
                                                 className="text-blue-600 font-bold"

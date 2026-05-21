@@ -14,7 +14,7 @@ function Profile() {
             const token = localStorage.getItem("token")
 
             const response = await axios.get(
-                "http://localhost:5000/dashboard",
+                "https://careerpilot-ai-cwrs.onrender.com/dashboard",
                 {
                     headers: {
                         Authorization: token

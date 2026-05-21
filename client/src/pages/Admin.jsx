@@ -25,7 +25,7 @@ function Admin() {
 
             const response = await axios.get(
 
-                "http://localhost:5000/jobs"
+                "https://careerpilot-ai-cwrs.onrender.com/jobs"
 
             )
 
@@ -48,7 +48,7 @@ function Admin() {
 
             await axios.post(
 
-                "http://localhost:5000/add-job",
+                "https://careerpilot-ai-cwrs.onrender.com/add-job",
 
                 {
                     title,
@@ -91,7 +91,7 @@ function Admin() {
 
             await axios.delete(
 
-                `http://localhost:5000/delete-job/${id}`
+                `https://careerpilot-ai-cwrs.onrender.com/delete-job/${id}`
 
             )
 

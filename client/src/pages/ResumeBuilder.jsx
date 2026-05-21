@@ -38,7 +38,7 @@ function ResumeBuilder() {
       setLoading(true);
 
       const res = await axios.post(
-        "http://localhost:5000/api/resume/generate",
+        "https://careerpilot-ai-cwrs.onrender.com/api/resume/generate",
         form
       );
 

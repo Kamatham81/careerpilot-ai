@@ -12,7 +12,7 @@ function Applications() {
         try {
 
             const response = await axios.get(
-                "http://localhost:5000/applications"
+                "https://careerpilot-ai-cwrs.onrender.com/applications"
             )
 
             setApplications(response.data)
@@ -206,7 +206,7 @@ function Applications() {
                             {/* BUTTON */}
 
                             <a
-                                href={`http://localhost:5000/${application.resume}`}
+                                href={`https://careerpilot-ai-cwrs.onrender.com/${application.resume}`}
                                 target="_blank"
                                 rel="noreferrer"
                                 className="block text-center bg-black text-white py-4 rounded-2xl mt-10 hover:bg-gray-800 transition font-semibold"

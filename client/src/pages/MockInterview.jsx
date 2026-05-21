@@ -19,7 +19,7 @@ function MockInterview() {
       setLoading(true);
 
       const res = await axios.post(
-        "http://localhost:5000/api/interview/question",
+        "https://careerpilot-ai-cwrs.onrender.com/api/interview/question",
         {
           role,
           difficulty,
